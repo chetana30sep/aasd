@@ -1,0 +1,72 @@
+Abstraction:
+
+Hide internal implementation and just highlight the set of services.
+
+It is the process of hiding the implementation / certain details and showing imp. info. which is useful to end user.
+
+Encapsulation : Data hiding/security
+Inheritance: Reusability
+Polymorphism: Reusability
+Abstraction : 
+
+
+2 ways:
+
+1) Abstract class :
+
+abstract class Demo{
+
+   abstract void display();
+
+}
+
+1) Abstract class have constructor
+2) we can not create object of abstract cls.
+3)abstract class is combination of abstract methods, concrete methods or empty cls.
+
+===============================================================================
+
+2) Interface :
+
+1)Interfaces cannot have constructors
+2) we can not create object of Interface 
+3)after 1.8 version, we can implement static method in interface.
+
+implements keyword :
+
+
+=================================================
+
+class Parent1{
+    void m1(){
+	     sout("Parent1- m1()");
+	}
+}
+
+class Parent2{
+      void m1(){
+	     sout("Parent2- m1()");
+	}
+
+}
+
+
+class child extends Parent1, Parent2{
+    main(){
+	     Child c = new Child();
+		 c.m1();
+		 }
+}
+
+======================================
+H.w. What is difference between Abstract class and interface . VIMP
+
+																			Abstract cls                                   Interface
+1) Constructor             									 allowed                                         Na
+2)variables                   										 normal                                             public static final 
+3) methods(non static)                    				combination                                    
+4) multiple inheritance                                     Not supported                                supported
+5)                                                                            extends                                             implements 
+6) access specifier                                                any                                                     public 
+
+
